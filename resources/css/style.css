@@ -49,8 +49,8 @@ body {
 
 header {
   height: 700px;
-  background: url("/resources/img/img-mission-background.webp") no-repeat center
-    center;
+  background: url("https://c-o-d-e.github.io/tea-cozy/resources/img/img-mission-background.webp")
+    no-repeat center center;
   background-size: cover;
   max-width: 1200px;
   margin: 0 auto;
@@ -119,8 +119,8 @@ main #img-gallery #img-container .imgbox {
 main #location-container {
   height: 500px;
   max-width: 1200px;
-  background: url("/resources/img/img-locations-background.webp") no-repeat
-    center center;
+  background: url("https://c-o-d-e.github.io/tea-cozy/resources/img/img-locations-background.webp")
+    no-repeat center center;
   margin: 0 auto;
   display: flex;
   justify-content: center;
