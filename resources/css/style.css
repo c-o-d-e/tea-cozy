@@ -116,44 +116,79 @@ main #img-gallery #img-container .imgbox {
   align-items: center;
 }
 
-main #location-container {
-  height: 500px;
+#location-bgimg {
   max-width: 1200px;
   background: url("https://c-o-d-e.github.io/tea-cozy/resources/img/img-locations-background.webp")
     no-repeat center center;
+  background-size: cover;
+  margin: 0 auto;
+  height: auto;
+}
+
+main #location-container {
+  /* height: 32rem; */
+  /* border: 1px solid white; */
+  height: auto;
+  /* max-width: 1200px;
+  background: url("https://c-o-d-e.github.io/tea-cozy/resources/img/img-locations-background.webp")
+    no-repeat center center; */
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 720px) {
+  #location-bgimg {
+    background: url("https://c-o-d-e.github.io/tea-cozy/resources/img/img-locations-background.webp")
+      no-repeat center center;
+    background-size: cover;
+  }
+  main #location-container {
+    flex-direction: column;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  #location-title {
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }
 
 main #location-container .location-box {
-  width: 300px;
-  max-width: 300px;
-  height: 300px;
+  min-width: 18.75rem;
+  max-width: 18.75rem;
+  height: 18.75rem;
   background-color: black;
-  margin: auto 40px;
+  margin: 2rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
+  flex-shrink: 1 0 auto;
+  margin-bottom: 5rem;
 }
 
-main #location-container #loc-box-container {
+/* main #location-container #loc-box-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
+} */
 
 #location-title {
   width: auto;
   margin: 0 auto;
-  display: block;
+  /* display: block; */
   text-align: center;
-  position: relative;
-  top: 80px;
+  padding-top: 3rem;
+  /* position: relative; */
+  /* top: 5rem; */
+  /* border: 1px solid red; */
 }
 
 main #contact {
