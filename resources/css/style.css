@@ -152,9 +152,35 @@ main #location-container {
     flex-wrap: wrap;
   }
 
+  .header-content {
+    text-align: center;
+  }
+
   #location-title {
     font-weight: bold;
     text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #navbar {
+    justify-content: center;
+  }
+
+  #navbar img {
+    display: none;
+  }
+
+  #navbar ul {
+    margin-right: 0px;
+  }
+
+  .header-content {
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
   }
 }
 
